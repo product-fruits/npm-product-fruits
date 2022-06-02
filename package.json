@@ -1,11 +1,12 @@
 {
-  "name": "product-fruits",
-  "version": "1.0.3",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "MIT"
+    "name": "product-fruits",
+    "version": "1.0.15",
+    "description": "",
+    "main": "index.js",
+    "typings": "types.d.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "MIT"
 }

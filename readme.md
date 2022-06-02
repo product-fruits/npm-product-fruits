@@ -1,6 +1,6 @@
 # Product Fruits NPM SDK
 
-Use this package for Product Fruits installation into NPM environments. This package can be used in browser environments.
+Use this package for Product Fruits installation into NPM environments. This package can be used in browser environments. The package supports TypeScript.
 
 # Instructions
 

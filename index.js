@@ -12,14 +12,14 @@ function initInternal() {
     })(window, document, 'https://app.productfruits.com/static/script.js'); // todo make it env agnostic
 }
 
-function apiInit(projectCode, language, userInfo/*, env*/) {// todo make it env agnostic
+function apiInit(projectCode, language, userInfo, options) {// todo make it env agnostic
     if (initialized) {
         throw new Error('Do not call init() multiple times');
     }
 
     initInternal();
 
-    window.$productFruits.push(['init', projectCode, language, userInfo]);
+    window.$productFruits.push(['init', projectCode, language, userInfo, options]);
 
     initialized = true;
 }
@@ -40,6 +40,6 @@ function apiSafeExec(callback) {
 
 export const productFruits = {
     init: apiInit,
-    updateUserData: apiUpdateUserData,
+    // updateUserData: apiUpdateUserData,
     safeExec: apiSafeExec
 }
