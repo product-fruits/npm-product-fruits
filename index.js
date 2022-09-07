@@ -40,6 +40,6 @@ function apiSafeExec(callback) {
 
 export const productFruits = {
     init: apiInit,
-    // updateUserData: apiUpdateUserData,
+    //updateUserData: apiUpdateUserData,
     safeExec: apiSafeExec
 }
