@@ -13,9 +13,9 @@ function initInternal() {
 }
 
 function apiInit(projectCode, language, userInfo, options) {// todo make it env agnostic
-    if (initialized) {
-        throw new Error('Do not call init() multiple times');
-    }
+    // if (initialized) {
+    //     throw new Error('Do not call init() multiple times');
+    // }
 
     initInternal();
 
