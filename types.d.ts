@@ -15,10 +15,18 @@ declare global {
         signUpAt?: string;
         firstname?: string;
         lastname?: string;
-        props?: UserCustomProps
+        props?: UserCustomProps,
+        group?: {
+            groupId?: string;
+            props?: UserGroupCustomProps
+        }
     }
 
     type UserCustomProps = {
+        [key: string]: string | number | Array<string> | Array<number> | UserCustomProps;
+    }
+
+    type UserGroupCustomProps = {
         [key: string]: string | number | Array<string> | Array<number> | UserCustomProps;
     }
 }
