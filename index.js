@@ -1,10 +1,10 @@
-if (typeof window == 'undefined') {
-    throw new Error('product-fruits package can run only in the browser environment. If you use server-side-generation, please update your code to import this package only in the browser.')
-}
-
 let initialized = false;
 
 function initInternal() {
+    if (typeof window == 'undefined') {
+        throw new Error('product-fruits package can run only in the browser environment. If you use server-side-generation, please update your code to import this package only in the browser.')
+    }
+
     (function (w, d, u) {
         w.$productFruits = w.$productFruits || [];
         w.productFruits = w.productFruits || {}; w.productFruits.scrV = '2';
