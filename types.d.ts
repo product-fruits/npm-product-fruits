@@ -18,7 +18,7 @@ declare global {
         props?: UserCustomProps,
         hmac?: {
             hash: string,
-            expiration?: string
+            expiration?: string | null | undefined
         }
         group?: {
             groupId?: string;
