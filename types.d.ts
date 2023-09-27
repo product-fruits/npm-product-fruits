@@ -27,7 +27,7 @@ declare global {
     }
 
     type UserCustomProps = {
-        [key: string]: string | number | Array<string> | Array<number> | UserCustomProps;
+        [key: string]: string | number | Array<string> | Array<number> | Boolean | UserCustomProps;
     }
 
     type UserGroupCustomProps = {
