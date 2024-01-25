@@ -6,6 +6,11 @@ declare global {
     type ProductFruitsInitOptions = {
         disableLocationChangeDetection?: boolean;
         disableBannersAutoMargin?: boolean;
+        customNavigation?: {
+            use?: boolean;
+            onGet?: () => string;
+            navigate?: (location: string) => void
+        }
     }
 
     type ProductFruitsUserObject = {
@@ -27,11 +32,11 @@ declare global {
     }
 
     type UserCustomProps = {
-        [key: string]: string | number | Array<string> | Array<number> | UserCustomProps;
+        [key: string]: string | number | boolean | Array<string> | Array<number> | UserCustomProps;
     }
 
     type UserGroupCustomProps = {
-        [key: string]: string | number | Array<string> | Array<number> | UserCustomProps;
+        [key: string]: string | number | boolean | Array<string> | Array<number> | UserCustomProps;
     }
 }
 
