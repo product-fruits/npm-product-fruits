@@ -23,4 +23,4 @@ productFruits.init('YOUR PROJECT CODE', 'LANGUAGE CODE', { username: '<<REPLACE>
 
 # More docs
 
-Read more at https://help.productfruits.com/en/article/npm-package
+Read more at [https://help.productfruits.com/en/article/npm-package](https://help.productfruits.com/en/article/installation-via-npm-package)
