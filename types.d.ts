@@ -6,6 +6,7 @@ declare global {
     type ProductFruitsInitOptions = {
         disableLocationChangeDetection?: boolean;
         disableBannersAutoMargin?: boolean;
+        hideInAppCenterLauncher?: boolean;
         customNavigation?: {
             use?: boolean;
             onGet?: () => string;
