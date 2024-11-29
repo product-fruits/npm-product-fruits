@@ -2,6 +2,7 @@ declare global {
     interface Window {
         productFruitsIsReady?: boolean;
         productFruitsReady?: () => void;
+        $productFruits?: ProductFruitsPushObject;
         productFruits?: ProductFruitsObject;
     }
 }
@@ -13,7 +14,8 @@ type ProductFruitsObject = {
     identifyUser?: (user: ProductFruitsUserObject) => void;
 };
 
-type ProductFruitsPushObject = Array<any> & {};
+type ProductFruitsPushObject = Array<any> & {
+};
 
 type ProductFruitsInitOptions = {
     disableLocationChangeDetection?: boolean;
@@ -54,4 +56,10 @@ type UserGroupCustomProps = {
 
 declare const productFruits: ProductFruitsObject;
 
-export { productFruits, ProductFruitsObject, ProductFruitsInitOptions, ProductFruitsUserObject };
+export { 
+    productFruits, 
+    ProductFruitsObject, 
+    ProductFruitsInitOptions, 
+    ProductFruitsUserObject,
+    ProductFruitsPushObject 
+};
