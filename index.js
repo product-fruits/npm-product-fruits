@@ -8,7 +8,7 @@ function initInternal() {
     (function (w, d, u) {
         w.$productFruits = w.$productFruits || [];
         w.productFruits = w.productFruits || {}; w.productFruits.scrV = '2';
-        let a = d.getElementsByTagName('head')[0]; let r = d.createElement('script'); r.async = 1; r.src = u; a.appendChild(r);
+        let a = d.getElementsByTagName('head')[0]; let r = d.createElement('script'); r.async = 1; r.crossOrigin = 'anonymous'; r.src = u; a.appendChild(r);
     })(window, document, 'https://app.productfruits.com/static/script.js'); // todo make it env agnostic
 }
 
